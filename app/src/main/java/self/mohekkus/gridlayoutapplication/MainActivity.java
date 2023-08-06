@@ -25,14 +25,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         RecyclerView recyclerView = findViewById(R.id.recycler);
+        // Adapter
         recyclerView.setAdapter(new CustomAdapter(mdata));
 
+        // Data Grid
         recyclerView.setLayoutManager(
                 new GridLayoutManager(this, 4)
         );
+        // Data Horizontal
 //        recyclerView.setLayoutManager(
 //                new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 //        );
+        // Data Vertical
 //        recyclerView.setLayoutManager(
 //                new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 //        );
